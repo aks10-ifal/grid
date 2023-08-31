@@ -1,27 +1,42 @@
-body, html {
-            height: 100%;
-            margin: 0;
-            background-color: #0a0ab8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.xd {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4, 200px);
+    gap: 5px;
+  }
 
-        .xd {
-            width: 800px;
-            height: 600px;
-            background-color: #fdf7f7;
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 10px;
-            padding: 20px;
-        }
+.xd div {
+    padding: 20px;
+    background-color: rgb(143, 83, 0, 0.4);
+    border: 1px solid black;
+    border-radius: 15px;
+}
 
-        .project {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
-        }
+.xd1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+
+.xd2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.xd3 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.xd4 {
+    grid-column-start: 3;
+
+}
+
+.xd5 {
+    grid-column-start: 2;
+}
